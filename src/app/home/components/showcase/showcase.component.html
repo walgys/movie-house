@@ -1,10 +1,3 @@
-<div (panend)="onPanEnd($event)" (panmove)="onPan($event)" class="showcase">
-  <div class="showcase-container">
-    <app-movie
-      [ngStyle]="{ transform: 'translateX(' + $panValue + 'px)' }"
-      class="movie"
-      [movie]="movie"
-      *ngFor="let movie of movieList"
-    ></app-movie>
-  </div>
+<div class="showcase">
+  <app-movie class="movie" [movie]="movie" *ngFor="let movie of movieList"></app-movie>
 </div>

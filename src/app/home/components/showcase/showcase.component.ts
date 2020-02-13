@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Movie } from '../../../core/movie';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-showcase',
@@ -88,19 +87,8 @@ export class ShowcaseComponent implements OnInit {
       theaters: ['Illinois', 'Washington', 'Vancouver', 'Toronto', 'Melbourne', 'Sydney']
     }
   ];
-  delta = 0;
-  $panValue = 0;
+
   constructor() {}
 
   ngOnInit() {}
-
-  onPan(event) {}
-  onPanEnd(event) {
-    if (event.deltaX > 100) {
-      this.$panValue += 300;
-    }
-    if (event.deltaX < -100) {
-      this.$panValue += -300;
-    }
-  }
 }

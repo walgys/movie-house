@@ -1,7 +1,8 @@
-.showcase-container {
+.showcase {
   display: flex;
-  margin: 20px;
-  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .movie {
   margin: 20px;

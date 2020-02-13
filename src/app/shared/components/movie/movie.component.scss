@@ -5,12 +5,14 @@
   background-color: slateblue;
 }
 .mat-card-title {
+  align-content: center;
   height: 50px;
   font-size: medium;
   color: whitesmoke;
-  vertical-align: middle;
   text-align: center;
+  display: grid;
 }
+
 .movie-container {
   height: 300px;
   width: 100%;
